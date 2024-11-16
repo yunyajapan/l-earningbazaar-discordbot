@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Yuri"
+    },
+    "motivations": {
+      "@value": "Since joining the Cardano ecosystem, I have managed various projects and collaborated with community members from around the world.\nAs I have seen many projects, I have come to think more deeply about what is necessary for Cardano, what development is necessary, and efficient fund distribution.\nI would like to use the knowledge I have cultivated as Drep to identify what is truly meaningful for Cardano and participate in decision-making."
+    },
+    "objectives": {
+      "@value": "By decentralizing Cardano, I believe that various opinions will be reflected in the direction of Cardano development and that the community will create a future of further development."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9w8q37pt6dy80wadz22lf2wpvd9d7qp69zlhrypngvstrmntecmsykwehutk4eql5uev4rtdxmgjacd9fj47frs464qandq05"
+    },
+    "qualifications": {
+      "@value": "Intersect Japan Hub Manager\nJPG Store Japan Marketing Head\nCatalyst Fund 8-12 Winner \nEX NMKR Japan Sales\nCo-founder of Co-Create DAO (Fund12 partnership)\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/BLUSTYURI1"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Co-Create DAO"
+        },
+        "uri": {
+          "@value": "https://kyosodao.io/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Linked in"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/yuri-hayashi-kuriyama-2a974b212/"
+        }
+      }
+    ]
+  }
+}
